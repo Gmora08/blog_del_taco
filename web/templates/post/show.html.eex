@@ -1,0 +1,28 @@
+<h2>Show post</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @post.title %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @post.content %>
+  </li>
+
+  <li>
+    <strong>Ranking:</strong>
+    <%= @post.ranking %>
+  </li>
+
+  <li>
+    <strong>Visits:</strong>
+    <%= @post.visits %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Back", to: post_path(@conn, :index) %>
